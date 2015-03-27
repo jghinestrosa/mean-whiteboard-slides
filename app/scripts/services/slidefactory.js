@@ -27,7 +27,15 @@ angular.module('slidesApp')
         if (slides.currentSlide !== 0) {
           slides.currentSlide--;
         }
-      }
+      },
+      getClassName: function() {
+          if (slides.currentSlide === 1) {
+            return "uno";
+          }
+          else if (slides.currentSlide === 2) {
+            return "dos";
+          }
+        }
     }
 
   });
