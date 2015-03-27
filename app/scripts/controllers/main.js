@@ -8,5 +8,10 @@
  * Controller of the slidesApp
  */
 angular.module('slidesApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $location) {
+
+    $scope.goToPage = function(page) {
+      $location.url("/" + page)
+    };
+
   });

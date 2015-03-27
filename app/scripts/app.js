@@ -14,13 +14,20 @@ angular
     'ngRoute',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/1.html',
+        controller: 'MainCtrl'
+      })
+      .when('/2', {
+        templateUrl: 'views/2.html',
         controller: 'MainCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
+
+    $locationProvider.html5Mode(true);
+
   });
