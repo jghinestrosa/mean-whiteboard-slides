@@ -10,7 +10,7 @@
 angular.module('slidesApp')
   .controller('MainCtrl', function ($scope, $location) {
 
-    $scope.goToPage = function(page) {
+    $scope.goToSlide = function(page) {
       $location.url("/" + page)
     };
 
