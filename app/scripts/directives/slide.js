@@ -12,6 +12,7 @@ angular.module('slidesApp')
       templateUrl: 'templates/slide.html',
       restrict: 'E',
       replace: true,
+      transclude: true,
       link: function postLink(scope, element, attrs) {
 
       }
