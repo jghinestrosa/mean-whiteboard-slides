@@ -20,6 +20,14 @@ html, body {
   position: absolute;
 }
 
+.number-of-slide {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+  color: white;
+}
+
 #one {
   background: #303030;
 }
