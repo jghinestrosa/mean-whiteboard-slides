@@ -21,7 +21,7 @@ angular.module('slidesApp')
       $scope.goToSlide(slideFactory.getCurrentSlide());
     };
 
-    $scope.currentClass = slideFactory.getClassName();
+    $scope.animationClass = slideFactory.getClassName();
 
   });
 

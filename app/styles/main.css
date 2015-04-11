@@ -33,15 +33,40 @@ html, body {
 }
 
 /** Animations **/
+.one.ng-enter {
+  z-index: 9998;
+  -webkit-animation: slideInBottom 0.5s both ease-in;
+  animation: slideInBottom 0.5s both ease-in;
+}
 
-.ng-enter {
+.one.ng-leave {
+  z-index: 9999;
+  -webkit-animation: slideOutLeft 0.5s both ease-in;
+  animation: slideOutLeft 0.5s both ease-in;
+}
+
+.two.ng-enter {
   z-index: 9998;
   -webkit-animation: slideInRight 0.5s both ease-in;
   animation: slideInRight 0.5s both ease-in;
 }
 
-.ng-leave {
+.two.ng-leave {
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
   z-index: 9999;
-  -webkit-animation: slideOutLeft 0.5s both ease-in;
-  animation: slideOutLeft 0.5s both ease-in;
+  -webkit-animation: slideOutRotate 1s both ease-out;
+  animation: slideOutRotate 1s both ease-out;
+}
+
+.three.ng-enter {
+  z-index: 9998;
+  /*-webkit-animation: slideInRight 0.5s both ease-in;
+  animation: slideInRight 0.5s both ease-in;*/
+}
+
+.three.ng-leave {
+  z-index: 9999;
+  /*-webkit-animation: slideOutLeft 0.5s both ease-in;
+  animation: slideOutLeft 0.5s both ease-in;*/
 }

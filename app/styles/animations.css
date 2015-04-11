@@ -17,7 +17,7 @@
   }
 }
 
-/* slide in from the bottom */
+/* slide out to the left */
 @keyframes slideOutLeft {
   to {
     transform: translateX(-100%);
@@ -27,5 +27,30 @@
 @-webkit-keyframes slideOutLeft {
   to {
     -webkit-transform: translateX(-100%);
+  }
+}
+
+/* slide in from the bottom */
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideInBottom {
+  from {
+    -webkit-transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes slideOutRotate {
+  to {
+    transform: rotateZ(180deg);
   }
 }
