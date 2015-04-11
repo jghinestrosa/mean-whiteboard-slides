@@ -21,6 +21,11 @@ angular.module('slidesApp')
       $scope.goToSlide(slideFactory.getCurrentSlide());
     };
 
+    $scope.goToPreviousSlide = function() {
+      slideFactory.goToPreviousSlide();
+      $scope.goToSlide(slideFactory.getCurrentSlide());
+    };
+
     $scope.animationClass = slideFactory.getClassName();
 
   });
