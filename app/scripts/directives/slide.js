@@ -14,15 +14,24 @@ angular.module('slidesApp')
       replace: true,
       transclude: true,
       link: function postLink(scope, element, attrs) {
-        element.on('click', function(e) {
+        var hammertime = new Hammer(element[0]);
+
+        hammertime.on('tap', function(e) {
           var middle = $window.innerWidth/2;
-          console.log(middle, e.clientX);
-          if (e.clientX >= middle) {
+          if (e.center.x >= middle) {
             scope.$apply(scope.goToNextSlide);
           }
           else {
            scope.$apply(scope.goToPreviousSlide);
           }
+        });
+
+        hammertime.on('swipeleft', function(e) {
+          scope.$apply(scope.goToNextSlide);
+        });
+
+        hammertime.on('swiperight', function(e) {
+          scope.$apply(scope.goToPreviousSlide);
         });
       }
     };

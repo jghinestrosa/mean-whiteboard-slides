@@ -10,7 +10,6 @@
 angular.module('slidesApp')
   .controller('MainCtrl', function ($scope, $location, slideFactory) {
 
-    $scope.currentSlide = slideFactory.getCurrentSlide();
 
     $scope.goToSlide = function(page) {
       $location.url("/" + page)
@@ -26,7 +25,9 @@ angular.module('slidesApp')
       $scope.goToSlide(slideFactory.getCurrentSlide());
     };
 
+    $scope.currentSlide = slideFactory.getCurrentSlide();
     $scope.animationClass = slideFactory.getClassName();
+
 
   });
 
