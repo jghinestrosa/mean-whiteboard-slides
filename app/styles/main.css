@@ -57,10 +57,12 @@ p {
 }
 
 .credits {
-  position: relative;
-  margin-top: 20%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
   color: white;
   text-align: center;
+  width: 100%;
 }
 
 .gradient-blue {
