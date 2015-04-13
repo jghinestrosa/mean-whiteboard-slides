@@ -28,6 +28,8 @@ angular.module('slidesApp')
     $scope.currentSlide = slideFactory.getCurrentSlide();
     $scope.animationClass = slideFactory.getClassName();
 
+    $scope.resizableReferent = {};
+
 
   });
 
