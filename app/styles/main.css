@@ -139,9 +139,17 @@ p {
 }
 
 .three.ng-leave {
-  transform-origin: 0 100%;
-  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
   z-index: 9999;
-  -webkit-animation: slideOutRotateBottomLeft 0.5s both ease-out;
-  animation: slideOutRotateBottomLeft 0.5s both ease-out;
+  /*-webkit-animation: slideOutRotateBottomLeft 0.5s both ease-out;*/
+  /*animation: slideOutRotateBottomLeft 0.5s both ease-out;*/
+  animation: fallTopLeft 2s both ease-out;
+  -webkit-animation: fallTopLeft 2s both ease-out;
+}
+
+.four.ng-enter {
+  z-index: 9998;
+  animation: skewFromRight 1s both ease-in;
+  -webkit-animation: skewFromRight 1s both ease-in;
 }

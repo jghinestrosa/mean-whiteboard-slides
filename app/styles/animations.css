@@ -49,12 +49,33 @@
   }
 }
 
+/* slide out from the bottom */
+@keyframes slideOutBottom {
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes slideOutBottom {
+  to {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+/* slide out rotating from the top left */
 @keyframes slideOutRotateTopLeft {
   to {
     transform: rotateZ(180deg);
   }
 }
 
+@-webkit-keyframes slideOutRotateTopLeft {
+  to {
+    -webkit-transform: rotateZ(180deg);
+  }
+}
+
+/* slide out rotating from the bottom left*/
 @keyframes slideOutRotateBottomLeft {
   to {
     transform: rotateZ(-180deg);
@@ -67,6 +88,102 @@
   }
 }
 
+/* Fall from top left */
+@keyframes fallTopLeft {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(70deg);
+  }
+  40% {
+    transform: rotateZ(40deg);
+  }
+  60% {
+    transform: rotate(55deg);
+  }
+  70% {
+    transform: rotateZ(70deg);
+  }
+  100% {
+    transform: rotate(40deg) translateY(100%);
+  }
+}
+
+@-webkit-keyframes fallTopLeft {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  20% {
+    -webkit-transform: rotateZ(70deg);
+  }
+  40% {
+    -webkit-transform: rotateZ(40deg);
+  }
+  60% {
+    -webkit-transform: rotate(55deg);
+  }
+  70% {
+    -webkit-transform: rotateZ(70deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg) translateY(100%);
+  }
+}
 
 
+/* Fade in */
+@keyframes fadeIn {
+  from {
+    transform: translateZ(-1000px);
+    opacity: 0.0;
+  }
+  to {
+    transform: translateZ(0px);
+    opacity: 1.0;
+  }
+}
 
+/* Enter with skew from right */
+@keyframes skewFromRight {
+  from {
+    transform: translateX(100%) skewY(-45deg);
+  }
+  to {
+    transform: translateX(0) skewY(0deg);
+  }
+}
+
+@-webkit-keyframes skewFromRight {
+  from {
+    -webkit-transform: translateX(100%) skewY(-45deg);
+  }
+  to {
+    -webkit-transform: translateX(0) skewY(0deg);
+  }
+}
+
+/* Enter rotating from right */
+@keyframes rotatingFromRight {
+  0% {
+    transform: translateX(100%) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(50%) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes rotatingFromRight {
+  0% {
+    -webkit-transform: translateX(100%) rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: translateX(50%) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: translateX(0) rotateY(360deg);
+  }
+}

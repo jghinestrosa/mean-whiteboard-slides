@@ -25,7 +25,7 @@ angular.module('slidesApp')
         },
         {
           number: 4,
-          animationClass: 'three'
+          animationClass: 'four'
         }
       ],
       currentSlide: 0,
