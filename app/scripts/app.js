@@ -28,6 +28,10 @@ angular
         templateUrl: 'views/3.html',
         controller: 'MainCtrl'
       })
+      .when('/4', {
+        templateUrl: 'views/4.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

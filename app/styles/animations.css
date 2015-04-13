@@ -49,8 +49,24 @@
   }
 }
 
-@keyframes slideOutRotate {
+@keyframes slideOutRotateTopLeft {
   to {
     transform: rotateZ(180deg);
   }
 }
+
+@keyframes slideOutRotateBottomLeft {
+  to {
+    transform: rotateZ(-180deg);
+  }
+}
+
+@-webkit-keyframes slideOutRotateBottomLeft {
+  to {
+    -webkit-transform: rotateZ(-180deg);
+  }
+}
+
+
+
+

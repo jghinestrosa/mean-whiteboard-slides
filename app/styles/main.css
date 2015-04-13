@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 @import url(http://fonts.googleapis.com/css?family=Dosis);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 html, body {
   margin: 0;
@@ -21,6 +22,7 @@ html, body {
   width: 100%;
   height: 100%;
   position: absolute;
+  text-align: center;
 }
 
 .number-of-slide {
@@ -75,6 +77,15 @@ p {
   font-style: italic;
 }
 
+.slide-title {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+.white-background {
+  background: white;
+}
+
 /* Styles for each slide */
 #one {
   /*background: #303030;*/
@@ -88,6 +99,10 @@ p {
 
 #three {
   background: #219161;
+}
+
+#four {
+  background: cornflowerblue;
 }
 
 /** Animations **/
@@ -113,18 +128,20 @@ p {
   transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   z-index: 9999;
-  -webkit-animation: slideOutRotate 1s both ease-out;
-  animation: slideOutRotate 1s both ease-out;
+  -webkit-animation: slideOutRotateTopLeft 1s both ease-out;
+  animation: slideOutRotateTopLeft 1s both ease-out;
 }
 
 .three.ng-enter {
   z-index: 9998;
-  /*-webkit-animation: slideInRight 0.5s both ease-in;
-  animation: slideInRight 0.5s both ease-in;*/
+  -webkit-animation: slideInRight 0.5s both ease-in;
+  animation: slideInRight 0.5s both ease-in;
 }
 
 .three.ng-leave {
+  transform-origin: 0 100%;
+  -webkit-transform-origin: 0 100%;
   z-index: 9999;
-  /*-webkit-animation: slideOutLeft 0.5s both ease-in;
-  animation: slideOutLeft 0.5s both ease-in;*/
+  -webkit-animation: slideOutRotateBottomLeft 0.5s both ease-out;
+  animation: slideOutRotateBottomLeft 0.5s both ease-out;
 }
