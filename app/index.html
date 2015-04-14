@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="slidesApp" ng-controller="MainCtrl">
+  <body ng-app="slidesApp" ng-controller="MainCtrl" ng-keydown="changeSlide($event)">
     <div class="container {{animationClass}}" ng-view="">
     </div>
 

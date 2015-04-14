@@ -9,6 +9,7 @@
  */
 angular.module('slidesApp')
   .factory('slideFactory', function () {
+
     var currentSlide = 1;
     var finalSlide = 4;
 
@@ -19,12 +20,18 @@ angular.module('slidesApp')
       goToNextSlide: function() {
         if (currentSlide !== finalSlide) {
           currentSlide++;
+          return true;
         }
+
+        return false;
       },
       goToPreviousSlide: function() {
         if (currentSlide !== 1) {
           currentSlide--;
+          return true;
         }
+
+        return false;
       }
     }
   });

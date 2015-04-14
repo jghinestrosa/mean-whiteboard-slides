@@ -15,15 +15,31 @@ angular.module('slidesApp')
     };
 
     $scope.goToNextSlide = function() {
-      slideFactory.goToNextSlide();
-      $scope.animationClass = 'next-slide-animation';
-      $scope.goToSlide(slideFactory.getCurrentSlide());
+      var changed = slideFactory.goToNextSlide();
+
+      if (changed) {
+        $scope.animationClass = 'next-slide-animation';
+        $scope.goToSlide(slideFactory.getCurrentSlide());
+      }
     };
 
     $scope.goToPreviousSlide = function() {
-      slideFactory.goToPreviousSlide();
-      $scope.animationClass = 'previous-slide-animation';
-      $scope.goToSlide(slideFactory.getCurrentSlide());
+      var changed = slideFactory.goToPreviousSlide();
+
+      if (changed) {
+        $scope.animationClass = 'previous-slide-animation';
+        $scope.goToSlide(slideFactory.getCurrentSlide());
+      }
+    };
+
+    $scope.changeSlide = function(e) {
+      var key = e.which;
+      if (key === 37) {
+        $scope.goToPreviousSlide();
+      }
+      else if (key === 39) {
+        $scope.goToNextSlide();
+      }
     };
 
     $scope.currentSlide = slideFactory.getCurrentSlide();

@@ -110,16 +110,20 @@ p {
 
 .next-slide-animation.ng-enter {
   animation: slide-in-left 0.5s both ease-in;
+  -webkit-animation: slide-in-left 0.5s both ease-in;
 }
 
-.next-slide-animation.ng-out {
+.next-slide-animation.ng-leave {
   animation: slide-out-left 1s both ease-out;
+  -webkit-animation: slide-out-left 1s both ease-out;
 }
 
 .previous-slide-animation.ng-enter {
   animation: slide-in-right 0.5s both ease-in;
+  -webkit-animation: slide-in-right 0.5s both ease-in;
 }
 
 .previous-slide-animation.ng-leave {
   animation: slide-out-right 1s both ease-out;
+  -webkit-animation: slide-out-right 1s both ease-out;
 }
