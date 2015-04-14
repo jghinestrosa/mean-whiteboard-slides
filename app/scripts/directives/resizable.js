@@ -11,8 +11,19 @@ angular.module('slidesApp')
     return {
       restrict: 'A',
       link: function postLink(scope, element, attrs) {
-        var originalHeight = element.css('height');
-        var originalWidth = element.css('width');
+        var originalHeight;
+        var originalWidth;
+
+        element[0].addEventListener('load', function() {
+          /*originalHeight = element.css('height');
+          originalWidth = element.css('width');*/
+          originalHeight = element[0].offsetHeight;
+          originalWidth = element[0].offsetWidth;
+
+          $window.addEventListener('resize', resize);
+
+          resize();
+        });
 
         // Margin bottom in px
         var marginBottom = 70;
@@ -30,9 +41,6 @@ angular.module('slidesApp')
           element.css('width', resizableWidth + 'px');
         }
 
-        $window.addEventListener('resize', resize);
-
-        resize();
 
       }
     };
