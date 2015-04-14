@@ -8,6 +8,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background: rgba(68, 124, 173, 1);
 }
 
 .container {
@@ -106,50 +107,19 @@ p {
 }
 
 /** Animations **/
-.one.ng-enter {
-  z-index: 9998;
-  -webkit-animation: slideInBottom 0.5s both ease-in;
-  animation: slideInBottom 0.5s both ease-in;
+
+.next-slide-animation.ng-enter {
+  animation: slide-in-left 0.5s both ease-in;
 }
 
-.one.ng-leave {
-  z-index: 9999;
-  -webkit-animation: slideOutLeft 0.5s both ease-in;
-  animation: slideOutLeft 0.5s both ease-in;
+.next-slide-animation.ng-out {
+  animation: slide-out-left 1s both ease-out;
 }
 
-.two.ng-enter {
-  z-index: 9998;
-  -webkit-animation: slideInRight 0.5s both ease-in;
-  animation: slideInRight 0.5s both ease-in;
+.previous-slide-animation.ng-enter {
+  animation: slide-in-right 0.5s both ease-in;
 }
 
-.two.ng-leave {
-  transform-origin: 0 0;
-  -webkit-transform-origin: 0 0;
-  z-index: 9999;
-  -webkit-animation: slideOutRotateTopLeft 1s both ease-out;
-  animation: slideOutRotateTopLeft 1s both ease-out;
-}
-
-.three.ng-enter {
-  z-index: 9998;
-  -webkit-animation: slideInRight 0.5s both ease-in;
-  animation: slideInRight 0.5s both ease-in;
-}
-
-.three.ng-leave {
-  transform-origin: 0 0;
-  -webkit-transform-origin: 0 0;
-  z-index: 9999;
-  /*-webkit-animation: slideOutRotateBottomLeft 0.5s both ease-out;*/
-  /*animation: slideOutRotateBottomLeft 0.5s both ease-out;*/
-  animation: fallTopLeft 2s both ease-out;
-  -webkit-animation: fallTopLeft 2s both ease-out;
-}
-
-.four.ng-enter {
-  z-index: 9998;
-  animation: skewFromRight 1s both ease-in;
-  -webkit-animation: skewFromRight 1s both ease-in;
+.previous-slide-animation.ng-leave {
+  animation: slide-out-right 1s both ease-out;
 }

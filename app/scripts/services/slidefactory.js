@@ -9,47 +9,22 @@
  */
 angular.module('slidesApp')
   .factory('slideFactory', function () {
-    var slidesManager = {
-      slides: [
-        {
-          number: 1,
-          animationClass: 'one'
-        },
-        {
-          number: 2,
-          animationClass: 'two'
-        },
-        {
-          number: 3,
-          animationClass: 'three'
-        },
-        {
-          number: 4,
-          animationClass: 'four'
-        }
-      ],
-      currentSlide: 0,
-      getNumberOfSlides: function() {
-        return this.slides.length;
-      }
-    };
+    var currentSlide = 1;
+    var finalSlide = 4;
 
     return {
       getCurrentSlide: function() {
-        return slidesManager.currentSlide + 1;
+        return currentSlide;
       },
       goToNextSlide: function() {
-        if (slidesManager.currentSlide !== slidesManager.getNumberOfSlides() - 1) {
-          slidesManager.currentSlide++;
+        if (currentSlide !== finalSlide) {
+          currentSlide++;
         }
       },
       goToPreviousSlide: function() {
-        if (slidesManager.currentSlide !== 0) {
-          slidesManager.currentSlide--;
+        if (currentSlide !== 1) {
+          currentSlide--;
         }
-      },
-      getClassName: function() {
-          return slidesManager.slides[slidesManager.currentSlide].animationClass;
-        }
+      }
     }
   });

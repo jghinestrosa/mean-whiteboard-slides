@@ -17,20 +17,16 @@ angular
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/1.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/1.html'
       })
       .when('/2', {
-        templateUrl: 'views/2.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/2.html'
       })
       .when('/3', {
-        templateUrl: 'views/3.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/3.html'
       })
       .when('/4', {
-        templateUrl: 'views/4.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/4.html'
       })
       .otherwise({
         redirectTo: '/'
