@@ -33,6 +33,7 @@ html, body {
   padding: 30px;
   color: white;
   font-family: 'Dosis', sans-serif;
+  z-index: 999;
 }
 
 p {

@@ -11,14 +11,17 @@ angular.module('slidesApp')
   .factory('slideFactory', function () {
 
     var currentSlide = 1;
-    var finalSlide = 4;
+    var lastSlide = 4;
 
     return {
       getCurrentSlide: function() {
         return currentSlide;
       },
+      getLastSlide: function() {
+        return lastSlide;
+      },
       goToNextSlide: function() {
-        if (currentSlide !== finalSlide) {
+        if (currentSlide !== lastSlide) {
           currentSlide++;
           return true;
         }

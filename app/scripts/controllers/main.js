@@ -20,6 +20,7 @@ angular.module('slidesApp')
       if (changed) {
         $scope.animationClass = 'next-slide-animation';
         $scope.goToSlide(slideFactory.getCurrentSlide());
+        $scope.currentSlide = slideFactory.getCurrentSlide();
       }
     };
 
@@ -29,6 +30,7 @@ angular.module('slidesApp')
       if (changed) {
         $scope.animationClass = 'previous-slide-animation';
         $scope.goToSlide(slideFactory.getCurrentSlide());
+        $scope.currentSlide = slideFactory.getCurrentSlide();
       }
     };
 
@@ -43,7 +45,7 @@ angular.module('slidesApp')
     };
 
     $scope.currentSlide = slideFactory.getCurrentSlide();
-
+    $scope.lastSlide = slideFactory.getLastSlide();
     $scope.resizableReferent = {};
 
 

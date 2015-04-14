@@ -18,7 +18,9 @@
     <!-- endbuild -->
   </head>
   <body ng-app="slidesApp" ng-controller="MainCtrl" ng-keydown="changeSlide($event)">
-    <div class="container {{animationClass}}" ng-view="">
+    <div class="container {{animationClass}}" ng-view=""></div>
+    <div class="number-of-slide">
+      {{currentSlide}} / {{lastSlide}}
     </div>
 
     <!-- build:js(.) scripts/vendor.js -->
