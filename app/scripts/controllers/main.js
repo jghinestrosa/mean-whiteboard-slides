@@ -8,7 +8,7 @@
  * Controller of the slidesApp
  */
 angular.module('slidesApp')
-  .controller('MainCtrl', function ($scope, $location, slideFactory) {
+  .controller('MainCtrl', function ($scope, $location, slideFactory, storageFactory) {
 
     $scope.goToSlide = function(page) {
       $location.url("/" + page)
@@ -66,6 +66,31 @@ angular.module('slidesApp')
 
     $scope.setInitialDropZoneText();
     $scope.initDropZone();
+
+    /** LocalStorage **/
+    var setSavedText = function(text) {
+      if (!text || text === '') {
+        $scope.storage.savedText = 'Escribe algo para la posteridad';
+      }
+      else {
+        $scope.storage.savedText = text;
+      }
+    };
+
+    $scope.storage = {
+      savedText: ''
+    };
+
+    $scope.saveText = function() {
+      storageFactory.save($scope.storage.savedText);
+    };
+
+    $scope.loadText = function() {
+      var text = storageFactory.load();
+      setSavedText(text);
+    };
+
+    $scope.loadText();
 
   });
 

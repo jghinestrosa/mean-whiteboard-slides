@@ -146,6 +146,18 @@ canvas {
   max-height: 60%;
 }
 
+#localStorageTextArea {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin: 0 auto;
+  font-size: 2em;
+}
+
+#localStorageTextArea + button {
+  margin-top: 10px;
+}
+
 /* Styles for each slide */
 #one {
   /*background: #303030;*/
