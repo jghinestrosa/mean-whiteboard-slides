@@ -28,6 +28,12 @@ angular
       .when('/4', {
         templateUrl: 'views/4.html'
       })
+      .when('/5', {
+        templateUrl: 'views/5.html'
+      })
+      .when('/6', {
+        templateUrl: 'views/6.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
