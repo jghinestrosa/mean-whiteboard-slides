@@ -92,5 +92,12 @@ angular.module('slidesApp')
 
     $scope.loadText();
 
+    /** Data binding example **/
+    $scope.dataBinding = {
+      name: 'Jorge García Hinestrosa',
+      thisIs: 'mi presentación del proyecto fin de carrera',
+      twitter: '@jghinestrosa'
+    }
+
   });
 

@@ -45,6 +45,10 @@ p {
   text-align: center;
 }
 
+p.big {
+  font-size: 2em;
+}
+
 .bold {
   font-weight: bold;
 }

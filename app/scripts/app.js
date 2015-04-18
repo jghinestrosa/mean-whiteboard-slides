@@ -52,6 +52,9 @@ angular
       .when('/12', {
         templateUrl: 'views/dataBindingDiagram.html'
       })
+      .when('/13', {
+        templateUrl: 'views/dataBindingExample.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
