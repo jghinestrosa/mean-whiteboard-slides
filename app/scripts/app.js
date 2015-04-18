@@ -37,6 +37,9 @@ angular
       .when('/7', {
         templateUrl: 'views/7.html'
       })
+      .when('/8', {
+        templateUrl: 'views/8.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

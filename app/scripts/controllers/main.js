@@ -48,6 +48,24 @@ angular.module('slidesApp')
     $scope.lastSlide = slideFactory.getLastSlide();
     $scope.resizableReferent = {};
 
+    /** Drag and drop **/
+    $scope.dropZoneText = '';
+
+    $scope.setDraggingText = function() {
+      $scope.dropZoneText = 'Suelta la imagen';
+    };
+
+    $scope.setInitialDropZoneText = function() {
+      $scope.dropZoneText = '¡Arrastra una imagen aquí!';
+    };
+
+    $scope.initDropZone = function() {
+      $scope.dropped = false;
+      $scope.imgDropped = '';
+    };
+
+    $scope.setInitialDropZoneText();
+    $scope.initDropZone();
 
   });
 

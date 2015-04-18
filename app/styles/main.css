@@ -112,6 +112,40 @@ canvas {
   border: 1px solid black;
 }
 
+#drop-zone {
+  border: 1px solid black;
+  width: 65%;
+  height: 65%;
+  background: white;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 auto;
+
+  transition-property: width, height;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+
+  -webkit-transition-property: width, height;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+}
+
+#drop-zone p {
+  position: relative;
+  color: black;
+  top: 30%;
+}
+
+.imgDropped {
+  position: relative;
+  top: 30%;
+  width: auto;
+  height: auto;
+  max-width: 60%;
+  max-height: 60%;
+}
+
 /* Styles for each slide */
 #one {
   /*background: #303030;*/
