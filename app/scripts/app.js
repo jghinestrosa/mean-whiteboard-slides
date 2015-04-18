@@ -49,6 +49,9 @@ angular
       .when('/11', {
         templateUrl: 'views/dependencyInjection.html'
       })
+      .when('/12', {
+        templateUrl: 'views/dataBindingDiagram.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

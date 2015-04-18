@@ -99,6 +99,7 @@ p {
 .list {
   display: inline-block;
   color: white;
+  font-family: 'Dosis', sans-serif;
 }
 
 .list .element {
@@ -183,6 +184,8 @@ canvas {
   height: auto;
   max-width: 70%;
   max-height: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 /** Animations **/
