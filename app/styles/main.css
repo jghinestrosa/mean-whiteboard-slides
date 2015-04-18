@@ -107,6 +107,11 @@ p {
   font-weight: bold;
 }
 
+canvas {
+  background: white;
+  border: 1px solid black;
+}
+
 /* Styles for each slide */
 #one {
   /*background: #303030;*/
