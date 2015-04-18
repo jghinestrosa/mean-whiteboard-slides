@@ -46,6 +46,9 @@ angular
       .when('/10', {
         templateUrl: 'views/angularJS.html'
       })
+      .when('/11', {
+        templateUrl: 'views/dependencyInjection.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
