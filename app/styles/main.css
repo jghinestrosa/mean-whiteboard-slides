@@ -107,8 +107,14 @@ p {
   background: cornflowerblue;
 }
 
-/** Animations **/
+.img-responsive {
+  width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 80%;
+}
 
+/** Animations **/
 .next-slide-animation.ng-enter {
   animation: slide-in-left 0.5s both ease-in;
   -webkit-animation: slide-in-left 0.5s both ease-in;
