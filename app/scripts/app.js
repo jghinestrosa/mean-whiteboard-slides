@@ -64,6 +64,9 @@ angular
       .when('/16', {
         templateUrl: 'views/socketioDiagram.html'
       })
+      .when('/17', {
+        templateUrl: 'views/newUserCommunication.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
