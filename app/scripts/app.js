@@ -112,6 +112,12 @@ angular
       .when('/32', {
         templateUrl: 'views/css3features.html'
       })
+      .when('/33', {
+        templateUrl: 'views/javascript.html'
+      })
+      .when('/34', {
+        templateUrl: 'views/javascriptFeatures.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
