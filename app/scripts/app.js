@@ -103,6 +103,12 @@ angular
       .when('/29', {
         templateUrl: 'views/ajax.html'
       })
+      .when('/30', {
+        templateUrl: 'views/webSocketIntro.html'
+      })
+      .when('/31', {
+        templateUrl: 'views/css3.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
