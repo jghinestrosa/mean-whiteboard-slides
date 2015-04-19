@@ -133,6 +133,9 @@ angular
       .when('/39', {
         templateUrl: 'views/expressFeatures.html'
       })
+      .when('/40', {
+        templateUrl: 'views/mongodb.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
