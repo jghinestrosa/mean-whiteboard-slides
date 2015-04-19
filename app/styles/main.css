@@ -284,6 +284,10 @@ section {
   width: 100%;
 }
 
+section form li input {
+  display: block;
+}
+
 figure {
   width: 100%;
   margin: 0;
