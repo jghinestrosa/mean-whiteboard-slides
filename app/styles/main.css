@@ -53,6 +53,10 @@ p.big {
   font-weight: bold;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .mean-title {
   font-family: 'Lobster', cursive;
   font-size: 4em;
@@ -120,6 +124,14 @@ p.big {
   width: 30px;
   margin-left: 20px;
   font-weight: bold;
+}
+
+.list.big-text {
+  font-size: 1.2em;
+}
+
+.list.vertical-centered {
+  transform: translateY(25%);
 }
 
 canvas {

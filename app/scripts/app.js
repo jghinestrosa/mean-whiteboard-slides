@@ -100,6 +100,9 @@ angular
       .when('/28', {
         templateUrl: 'views/directiveAttribute.html'
       })
+      .when('/29', {
+        templateUrl: 'views/ajax.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
