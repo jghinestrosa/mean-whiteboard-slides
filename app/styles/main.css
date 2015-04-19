@@ -130,7 +130,7 @@ p.big {
   font-size: 1.2em;
 }
 
-.list.vertical-centered {
+.list.vertical-centered, div.vertical-centered {
   transform: translateY(50%);
 }
 
