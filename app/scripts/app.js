@@ -91,6 +91,9 @@ angular
       .when('/25', {
         templateUrl: 'views/socketio.html'
       })
+      .when('/26', {
+        templateUrl: 'views/caniuseWebsocket.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
