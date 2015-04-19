@@ -208,6 +208,24 @@ canvas {
   margin: 0 auto;
   border-radius: 10px;
 }
+section {
+  height: 100%;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+  transform: translateY(25%);
+}
+
+figure.spaced {
+  margin-top: 15px;
+}
+
+figcaption {
+  font-family: 'Dosis', sans-serif;
+  color: white;
+}
 
 /** Animations **/
 .next-slide-animation.ng-enter {

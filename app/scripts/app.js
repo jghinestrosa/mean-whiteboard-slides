@@ -94,6 +94,12 @@ angular
       .when('/26', {
         templateUrl: 'views/caniuseWebsocket.html'
       })
+      .when('/27', {
+        templateUrl: 'views/directiveElement.html'
+      })
+      .when('/28', {
+        templateUrl: 'views/directiveAttribute.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
