@@ -79,6 +79,9 @@ angular
       .when('/21', {
         templateUrl: 'views/grunt.html'
       })
+      .when('/22', {
+        templateUrl: 'views/bower.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

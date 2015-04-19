@@ -108,7 +108,8 @@ p.big {
 
 .list.centered {
   position: relative;
-  left: 25%;
+  display: table;
+  margin: 0 auto;
 }
 
 .list li.spaced {
