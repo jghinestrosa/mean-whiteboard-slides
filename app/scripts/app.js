@@ -67,6 +67,9 @@ angular
       .when('/17', {
         templateUrl: 'views/newUserCommunication.html'
       })
+      .when('/18', {
+        templateUrl: 'views/joinAnotherUser.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
