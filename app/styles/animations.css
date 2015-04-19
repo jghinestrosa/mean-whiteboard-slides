@@ -298,3 +298,19 @@
     -webkit-transform: translateX(100%);
   }
 }
+
+/** Animations example **/
+
+@keyframes example1 {
+  to {
+    transform: rotateZ(360deg) translateX(100%);
+    background: blue;
+  }
+}
+
+@-webkit-keyframes example1 {
+  to {
+    -webkit-transform: rotateZ(360deg) translateX(100%);
+    background: blue;
+  }
+}

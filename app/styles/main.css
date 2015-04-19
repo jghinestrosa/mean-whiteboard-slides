@@ -192,6 +192,32 @@ canvas {
   margin-top: 10px;
 }
 
+#animations-example {
+  padding: 20px;
+}
+
+.square {
+  margin: 0 auto;
+  border: 2px solid black;
+  background: red;
+  width: 70px;
+  height: 70px;
+
+  animation-name: example1;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+
+  -webkit-animation-name: example1;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in;
+}
+
 /* Styles for each slide */
 #one {
   /*background: #303030;*/

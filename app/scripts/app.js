@@ -109,6 +109,9 @@ angular
       .when('/31', {
         templateUrl: 'views/css3.html'
       })
+      .when('/32', {
+        templateUrl: 'views/css3features.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
