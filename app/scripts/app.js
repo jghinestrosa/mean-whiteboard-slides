@@ -118,6 +118,15 @@ angular
       .when('/34', {
         templateUrl: 'views/javascriptFeatures.html'
       })
+      .when('/35', {
+        templateUrl: 'views/nodejs.html'
+      })
+      .when('/36', {
+        templateUrl: 'views/nodejsfeatures.html'
+      })
+      .when('/37', {
+        templateUrl: 'views/npm.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

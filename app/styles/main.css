@@ -131,7 +131,7 @@ p.big {
 }
 
 .list.vertical-centered {
-  transform: translateY(25%);
+  transform: translateY(50%);
 }
 
 canvas {
