@@ -148,6 +148,9 @@ angular
       .when('/44', {
         templateUrl: 'views/future.html'
       })
+      .when('/45', {
+        templateUrl: 'views/future2.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

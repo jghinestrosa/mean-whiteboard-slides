@@ -254,6 +254,10 @@ canvas {
   margin: 0 auto;
   border-radius: 10px;
 }
+
+.img-responsive.padding {
+  padding: 10px;
+}
 section {
   height: 100%;
 }
@@ -271,6 +275,10 @@ figure.spaced {
 figcaption {
   font-family: 'Dosis', sans-serif;
   color: white;
+}
+
+#ionic-logo {
+  width: 400px;
 }
 
 /** Animations **/
