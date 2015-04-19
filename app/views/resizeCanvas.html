@@ -4,7 +4,7 @@
     <canvas width="500" height="500" whiteboard ng-style="{width: (canvasResizable.width + 'px'), height: (canvasResizable.height + 'px')}"></canvas>
   </div>
   <div class="resizable-canvas-input">
-    <label for="width">Ancho:</label><input id="width" type="number" ng-model="canvasResizable.width"/>
-    <label for="height">Height:</label><input id="height" type="number" ng-model="canvasResizable.height"/>
+    <label for="width">Ancho:</label><input id="width" type="range" min="0" max="500" ng-model="canvasResizable.width"/>
+    <label for="height">Alto:</label><input id="height" type="range" min="0" max="500" ng-model="canvasResizable.height"/>
   </div>
 </slide>
