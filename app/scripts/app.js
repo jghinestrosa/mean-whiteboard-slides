@@ -70,6 +70,9 @@ angular
       .when('/18', {
         templateUrl: 'views/joinAnotherUser.html'
       })
+      .when('/19', {
+        templateUrl: 'views/usersNormalCommunication.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
