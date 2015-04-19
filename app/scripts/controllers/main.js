@@ -99,5 +99,11 @@ angular.module('slidesApp')
       twitter: '@jghinestrosa'
     }
 
+    /** Canvas resizable example **/
+    $scope.canvasResizable = {
+      width: 500,
+      height: 500
+    };
+
   });
 

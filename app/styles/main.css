@@ -117,6 +117,12 @@ canvas {
   border: 1px solid black;
 }
 
+.resizable-canvas-input {
+  position: absolute;
+  left: 33%;
+  bottom: 40px;
+}
+
 #drop-zone {
   border: 2px dashed black;
   border-radius: 10px;

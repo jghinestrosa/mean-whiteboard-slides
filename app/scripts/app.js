@@ -55,6 +55,9 @@ angular
       .when('/13', {
         templateUrl: 'views/dataBindingExample.html'
       })
+      .when('/14', {
+        templateUrl: 'views/resizeCanvas.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
