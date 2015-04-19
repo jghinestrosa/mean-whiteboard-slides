@@ -2,7 +2,16 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-html, body {
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: white;
+}
+
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -246,26 +255,38 @@ canvas {
 }
 
 .img-responsive {
+  max-width: 40%;
+  max-height: 50%;
   width: auto;
   height: auto;
-  max-width: 70%;
-  max-height: 80%;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
 }
 
+.img-responsive.without-text {
+  max-width: 70%;
+  max-height: 80%;
+}
+
 .img-responsive.padding {
   padding: 10px;
 }
+
+.img-responsive.future-img {
+  max-width: 30%;
+  max-height: 40%;
+}
+
 section {
-  height: 100%;
+  /*height: 100%;*/
+  display: inline-block;
+  width: 100%;
 }
 
 figure {
   width: 100%;
   margin: 0;
-  transform: translateY(25%);
 }
 
 figure.spaced {
