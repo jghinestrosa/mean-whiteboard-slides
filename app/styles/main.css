@@ -134,6 +134,14 @@ p.big {
   transform: translateY(50%);
 }
 
+h1.vertical-centered {
+  margin-top: 15%;
+}
+
+h1.bigger {
+  font-size: 4em;
+}
+
 canvas {
   background: white;
   border: 1px solid black;
