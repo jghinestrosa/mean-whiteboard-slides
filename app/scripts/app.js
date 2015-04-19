@@ -139,6 +139,9 @@ angular
       .when('/41', {
         templateUrl: 'views/mongodbDescription.html'
       })
+      .when('/42', {
+        templateUrl: 'views/mongodbScalable.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
