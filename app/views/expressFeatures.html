@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<slide>
+  <h1 class="slide-title">Express.js - Características</h1>
+  <section>
+    <ul class="list centered big-text">
+      <li><span class="bold">Middleware</span>
+        <ul>
+          <li class="spaced">Función JavaScript que gestiona las peticiones HTTP que recibe una aplicación de Express.</li>
+          <li class="spaced">Node.js ofrece una única función para gestionar las peticiones.</li>
+          <li class="spaced">Express permite tener varias funciones separadas y cada una de ellas puede encargarse de una parte del trabajo.
+            <ul>
+              <li class="spaced">Peticiones de logging.</li>
+              <li class="spaced">Enviar archivos estáticos.</li>
+              <li class="spaced">Enviar cabeceras HTTP.</li>
+            </ul>
+          </li>
+          <li class="spaced">La funcionalidad se mantiene separada y la aplicación se vuelve más modular.</li>
+        </ul>
+      </li>
+      <li class="spaced"><span class="bold">Routing</span>
+        <ul>
+          <li class="spaced">Express permite varias funciones para gestionar las distintas peticiones.</li>
+          <li class="spaced">A diferencia del middleware, estas funciones se ejecutan condicionalmente segun la URL o método HTTP.
+            <ul>
+              <li>Una función para gestionar peticiones GET.</li>
+              <li>Una función para gestionar peticiones POST.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</slide>

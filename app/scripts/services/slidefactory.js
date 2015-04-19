@@ -11,7 +11,7 @@ angular.module('slidesApp')
   .factory('slideFactory', function () {
 
     var currentSlide = 1;
-    var lastSlide = 37;
+    var lastSlide = 39;
 
     return {
       getCurrentSlide: function() {

@@ -127,6 +127,12 @@ angular
       .when('/37', {
         templateUrl: 'views/npm.html'
       })
+      .when('/38', {
+        templateUrl: 'views/express.html'
+      })
+      .when('/39', {
+        templateUrl: 'views/expressFeatures.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
