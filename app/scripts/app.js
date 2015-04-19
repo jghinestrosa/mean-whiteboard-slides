@@ -85,6 +85,9 @@ angular
       .when('/23', {
         templateUrl: 'views/karma.html'
       })
+      .when('/24', {
+        templateUrl: 'views/jasmine.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
