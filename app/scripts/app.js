@@ -58,6 +58,9 @@ angular
       .when('/14', {
         templateUrl: 'views/resizeCanvas.html'
       })
+      .when('/15', {
+        templateUrl: 'views/webSocketsDiagram.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
