@@ -61,6 +61,9 @@ angular
       .when('/15', {
         templateUrl: 'views/webSocketsDiagram.html'
       })
+      .when('/16', {
+        templateUrl: 'views/socketioDiagram.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
