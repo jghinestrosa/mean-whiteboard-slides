@@ -73,6 +73,9 @@ angular
       .when('/19', {
         templateUrl: 'views/usersNormalCommunication.html'
       })
+      .when('/20', {
+        templateUrl: 'views/yeoman.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
