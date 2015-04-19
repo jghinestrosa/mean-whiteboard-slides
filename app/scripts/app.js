@@ -151,6 +151,12 @@ angular
       .when('/45', {
         templateUrl: 'views/future2.html'
       })
+      .when('/46', {
+        templateUrl: 'views/githubProgress.html'
+      })
+      .when('/47', {
+        templateUrl: 'views/rankingGitHub.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
