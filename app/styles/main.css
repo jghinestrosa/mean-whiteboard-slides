@@ -126,6 +126,7 @@ p.big {
   /*display: inline-block;*/
   color: white;
   font-family: 'Dosis', sans-serif;
+  padding: 10%;
 }
 
 .list.centered {
@@ -149,7 +150,7 @@ p.big {
 }
 
 .list.vertical-centered, div.vertical-centered {
-  transform: translateY(50%);
+  /*transform: translateY(50%);*/
 }
 
 h1.vertical-centered {

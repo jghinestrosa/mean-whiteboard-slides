@@ -1,0 +1,5 @@
+@media screen and (max-height: 480px) {
+  .list.big-text {
+    font-size: 1em;
+  }
+}

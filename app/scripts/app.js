@@ -157,6 +157,12 @@ angular
       .when('/47', {
         templateUrl: 'views/rankingGitHub.html'
       })
+      .when('/48', {
+        templateUrl: 'views/singlePage.html'
+      })
+      .when('/49', {
+        templateUrl: 'views/angularJSMVC.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
