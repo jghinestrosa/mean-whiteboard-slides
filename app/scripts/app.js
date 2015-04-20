@@ -163,6 +163,24 @@ angular
       .when('/49', {
         templateUrl: 'views/angularJSMVC.html'
       })
+      .when('/50', {
+        templateUrl: 'views/whiteboardDesign.html'
+      })
+      .when('/51', {
+        templateUrl: 'views/uploadDesign.html'
+      })
+      .when('/52', {
+        templateUrl: 'views/galleryDesign.html'
+      })
+      .when('/53', {
+        templateUrl: 'views/problems.html'
+      })
+      .when('/54', {
+        templateUrl: 'views/problems1.html'
+      })
+      .when('/55', {
+        templateUrl: 'views/problems2.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

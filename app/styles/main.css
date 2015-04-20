@@ -126,7 +126,6 @@ p.big {
   /*display: inline-block;*/
   color: white;
   font-family: 'Dosis', sans-serif;
-  padding: 10%;
 }
 
 .list.centered {
@@ -296,6 +295,17 @@ section {
 
 section form li input {
   display: block;
+}
+
+section.just-header {
+  height: 100%;
+  display: table;
+  text-align: center;
+}
+
+section.just-header h1 {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 figure {
