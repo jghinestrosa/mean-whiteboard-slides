@@ -45,6 +45,14 @@ p {
   text-align: center;
 }
 
+.index {
+  margin-left: 30px;
+}
+
+.index .big {
+  font-size: 1.5em;
+}
+
 p.big {
   font-size: 2em;
 }
@@ -214,13 +222,13 @@ section form li input {
   display: block;
 }
 
-section.just-header {
+section.just-header, section.just-image {
   height: 100%;
   display: table;
   text-align: center;
 }
 
-section.just-header h1 {
+section.just-header h1, section.just-image div{
   display: table-cell;
   vertical-align: middle;
 }

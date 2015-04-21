@@ -1,48 +1,4 @@
 <slide>
   <h1 class="slide-title">AngularJS - Model View Controller</h1>
-  <section>
-    <ul class="list centered vertical-centered big-text">
-      <li><span class="bold">Modulo</span>
-        <ul>
-          <li>Contenedor de las distintas partes de la aplicación.</li>
-          <li>En general, un único módulo por aplicación.</li>
-        </ul>
-      </li>
-      <li>
-        <span class="bold">Scope</span>
-        <ul>
-          <li>Objeto que <span class="bold">referencia </span> al modelo.</li>
-          <li>Contexto de ejecución de expresiones.</li>
-          <li>Los scopes pueden heredar unos de otros.</li>
-          <li>Es el "pegamento" que une la vista y el controlador.</li>
-          <li>Los cambios producidos en el scope y reflejados en la vista se actualizan automáticamente.</li>
-        </ul>
-      </li>
-      <li>
-        <span class="bold">Controlador</span>
-        <ul>
-          <li>Un controller es una función constructora que manipula el scope.</li>
-          <li>Se enlaza con el DOM mediante un scope.</li>
-          <li>Solo deben contener lógica de negocio.</li>
-          <li>Para compartir código entre controladores se utilizan servicios.</li>
-        </ul>
-      </li>
-      <li>
-        <span class="bold">Servicio</span>
-        <ul>
-          <li>Objetos para organizar el código y compartirlo a lo largo de la aplicación.</li>
-          <li>Pueden funcionar como dependencias de componentes.</li>
-          <li>Se instancia únicamente cuando lo necesita un componente.</li>
-          <li>Singleton.</li>
-        </ul>
-      </li>
-      <li>
-        <span class="bold">Directiva</span>
-        <ul>
-          <li>Marcadores en un elemento del DOM (atributo, nombre de elemento...).</li>
-          <li>El único componente desde donde puede manipularse un elemento del DOM.</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
+  <img class="img-responsive without-text" src="images/templateControllerService.png" alt="Template Controller Service"/>
 </slide>

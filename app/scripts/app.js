@@ -20,7 +20,7 @@ angular
         templateUrl: 'views/cover.html'
       })
       .when('/2', {
-        templateUrl: 'views/contents.html'
+        templateUrl: 'views/contents1.html'
       })
       .when('/3', {
         templateUrl: 'views/motivation.html'
@@ -35,7 +35,7 @@ angular
         templateUrl: 'views/rankingGitHub.html'
       })
       .when('/7', {
-        templateUrl: 'views/contents.html'
+        templateUrl: 'views/contents2.html'
       })
       .when('/8', {
         templateUrl: 'views/html5.html'
@@ -74,84 +74,96 @@ angular
         templateUrl: 'views/angularJSMVC.html'
       })
       .when('/20', {
-        templateUrl: 'views/nodejs.html'
+        templateUrl: 'views/angularJSscope.html'
       })
       .when('/21', {
-        templateUrl: 'views/nodejsfeatures.html'
+        templateUrl: 'views/nodejs.html'
       })
       .when('/22', {
-        templateUrl: 'views/express.html'
+        templateUrl: 'views/nodejsfeatures.html'
       })
       .when('/23', {
-        templateUrl: 'views/expressFeatures.html'
+        templateUrl: 'views/express.html'
       })
       .when('/24', {
-        templateUrl: 'views/mongodb.html'
+        templateUrl: 'views/expressFeatures.html'
       })
       .when('/25', {
-        templateUrl: 'views/mongodbFeatures.html'
+        templateUrl: 'views/mongodb.html'
       })
       .when('/26', {
-        templateUrl: 'views/contents.html'
+        templateUrl: 'views/mongodbFeatures.html'
       })
       .when('/27', {
-        templateUrl: 'views/singlePage.html'
+        templateUrl: 'views/contents3.html'
       })
       .when('/28', {
-        templateUrl: 'views/ngRouteDiagram.html'
+        templateUrl: 'views/singlePage.html'
       })
       .when('/29', {
-        templateUrl: 'views/shareWhiteboard.html'
+        templateUrl: 'views/ngRouteDiagram.html'
       })
       .when('/30', {
-        templateUrl: 'views/webSocketIntro.html'
+        templateUrl: 'views/shareWhiteboard.html'
       })
       .when('/31', {
-        templateUrl: 'views/webSocketsDiagram.html'
+        templateUrl: 'views/webSocketIntro.html'
       })
       .when('/32', {
-        templateUrl: 'views/socketio.html'
+        templateUrl: 'views/webSocketsDiagram.html'
       })
       .when('/33', {
-        templateUrl: 'views/socketioDiagram.html'
+        templateUrl: 'views/socketio.html'
       })
       .when('/34', {
-        templateUrl: 'views/newUserCommunication.html'
+        templateUrl: 'views/socketioDiagram.html'
       })
       .when('/35', {
-        templateUrl: 'views/joinAnotherUser.html'
+        templateUrl: 'views/newUserCommunication.html'
       })
       .when('/36', {
-        templateUrl: 'views/usersNormalCommunication.html'
+        templateUrl: 'views/joinAnotherUser.html'
       })
       .when('/37', {
-        templateUrl: 'views/tools.html'
+        templateUrl: 'views/usersNormalCommunication.html'
       })
       .when('/38', {
-        templateUrl: 'views/yeoman.html'
+        templateUrl: 'views/tools.html'
       })
       .when('/39', {
-        templateUrl: 'views/grunt.html'
+        templateUrl: 'views/yeoman.html'
       })
       .when('/40', {
-        templateUrl: 'views/bower.html'
+        templateUrl: 'views/grunt.html'
       })
       .when('/41', {
-        templateUrl: 'views/karma.html'
+        templateUrl: 'views/bower.html'
       })
       .when('/42', {
-        templateUrl: 'views/jasmine.html'
+        templateUrl: 'views/karma.html'
       })
       .when('/43', {
-        templateUrl: 'views/future.html'
+        templateUrl: 'views/jasmine.html'
       })
       .when('/44', {
-        templateUrl: 'views/future2.html'
+        templateUrl: 'views/content4.html'
       })
       .when('/45', {
-        templateUrl: 'views/future2.html'
+        templateUrl: 'views/contents5.html'
       })
       .when('/46', {
+        templateUrl: 'views/contents5.html'
+      })
+      .when('/47', {
+        templateUrl: 'views/conclusions.html'
+      })
+      .when('/48', {
+        templateUrl: 'views/future.html'
+      })
+      .when('/49', {
+        templateUrl: 'views/future2.html'
+      })
+      .when('/50', {
         templateUrl: 'views/thankyou.html'
       })
       .otherwise({
