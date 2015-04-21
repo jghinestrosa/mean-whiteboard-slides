@@ -1,13 +1,4 @@
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: white;
-}
-
-body {
+html, body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -46,11 +37,6 @@ body {
 
 #data-binding-list {
   margin-top: 10px;
-}
-
-label {
-  color: white;
-  font-family: 'Dosis', sans-serif;
 }
 
 p {
@@ -119,7 +105,6 @@ p.big {
 }
 
 .list {
-  /*display: inline-block;*/
   color: white;
   font-family: 'Dosis', sans-serif;
 }
@@ -144,14 +129,6 @@ p.big {
   font-size: 1.2em;
 }
 
-.list.vertical-centered, div.vertical-centered {
-  /*transform: translateY(50%);*/
-}
-
-h1.vertical-centered {
-  margin-top: 15%;
-}
-
 h1.bigger {
   font-size: 4em;
 }
@@ -161,69 +138,12 @@ canvas {
   border: 1px solid black;
 }
 
-.resizable-canvas-input {
-  position: absolute;
-  width: 100%;
-  bottom: 40px;
-}
-
-#drop-zone {
-  border: 2px dashed black;
-  border-radius: 10px;
-  width: 65%;
-  height: 65%;
-  background: white;
-  font-family: 'Dosis', sans-serif;
-  text-align: center;
-  font-size: 1.5em;
-  margin: 0 auto;
-
-  transition-property: width, height;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in;
-
-  -webkit-transition-property: width, height;
-  -webkit-transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in;
-}
-
-#drop-zone p {
-  position: relative;
-  color: black;
-  top: 30%;
-}
-
-.imgDropped {
-  position: relative;
-  top: 30%;
-  width: auto;
-  height: auto;
-  max-width: 60%;
-  max-height: 60%;
-}
-
-#localStorageTextArea {
-  width: 60%;
-  height: 60%;
-  display: block;
-  margin: 0 auto;
-  font-size: 2em;
-}
-
-#localStorageTextArea + button {
-  margin-top: 10px;
-}
-
-#animations-example {
-  padding: 20px;
-}
-
 .square {
   margin: 0 auto;
   border: 2px solid black;
   background: red;
-  width: 70px;
-  height: 70px;
+  width: 140px;
+  height: 140px;
 
   animation-name: example1;
   animation-duration: 2s;
@@ -241,24 +161,6 @@ canvas {
 }
 
 /* Styles for each slide */
-#one {
-  /*background: #303030;*/
-  /*background: linear-gradient(to bottom, rgba(68, 124, 173, 1) 0%, rgba(125, 185, 232, 1) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
-  background: rgba(68, 124, 173, 1);
-}
-
-#two {
-  background: #006666;
-}
-
-#three {
-  background: #219161;
-}
-
-#four {
-  background: cornflowerblue;
-}
-
 .img-responsive {
   max-width: 40%;
   max-height: 50%;
@@ -287,6 +189,25 @@ section {
   /*height: 100%;*/
   display: inline-block;
   width: 100%;
+}
+
+section.list-wrapper {
+  display: table;
+  font-size: 1.6em;
+  margin-top: 10%;
+}
+
+section.image-text-wrapper {
+  position: absolute;
+  font-size: 1.6em;
+  top: 0;
+  display: table;
+  height: 100%;
+}
+
+section.list-wrapper div, section.image-text-wrapper div {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 section form li input {

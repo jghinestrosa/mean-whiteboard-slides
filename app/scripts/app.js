@@ -59,102 +59,99 @@ angular
         templateUrl: 'views/javascriptFeatures.html'
       })
       .when('/15', {
-        templateUrl: 'views/dependencyInjection.html'
-      })
-      .when('/16', {
         templateUrl: 'views/angularJS.html'
       })
-      .when('/17', {
+      .when('/16', {
         templateUrl: 'views/dataBindingDiagram.html'
       })
-      .when('/18', {
+      .when('/17', {
         templateUrl: 'views/dataBindingExample.html'
       })
-      .when('/19', {
+      .when('/18', {
         templateUrl: 'views/dependencyInjection.html'
       })
-      .when('/20', {
+      .when('/19', {
         templateUrl: 'views/angularJSMVC.html'
       })
-      .when('/21', {
+      .when('/20', {
         templateUrl: 'views/nodejs.html'
       })
-      .when('/22', {
+      .when('/21', {
         templateUrl: 'views/nodejsfeatures.html'
       })
-      .when('/23', {
+      .when('/22', {
         templateUrl: 'views/express.html'
       })
-      .when('/24', {
+      .when('/23', {
         templateUrl: 'views/expressFeatures.html'
       })
-      .when('/25', {
+      .when('/24', {
         templateUrl: 'views/mongodb.html'
       })
-      .when('/26', {
+      .when('/25', {
         templateUrl: 'views/mongodbFeatures.html'
       })
-      .when('/27', {
+      .when('/26', {
         templateUrl: 'views/contents.html'
       })
-      .when('/28', {
+      .when('/27', {
         templateUrl: 'views/singlePage.html'
+      })
+      .when('/28', {
+        templateUrl: 'views/ngRouteDiagram.html'
       })
       .when('/29', {
-        templateUrl: 'views/singlePage.html'
-      })
-      .when('/30', {
         templateUrl: 'views/shareWhiteboard.html'
       })
-      .when('/31', {
+      .when('/30', {
         templateUrl: 'views/webSocketIntro.html'
       })
-      .when('/32', {
+      .when('/31', {
         templateUrl: 'views/webSocketsDiagram.html'
       })
-      .when('/33', {
+      .when('/32', {
         templateUrl: 'views/socketio.html'
       })
-      .when('/34', {
+      .when('/33', {
         templateUrl: 'views/socketioDiagram.html'
       })
-      .when('/35', {
+      .when('/34', {
         templateUrl: 'views/newUserCommunication.html'
       })
-      .when('/36', {
+      .when('/35', {
         templateUrl: 'views/joinAnotherUser.html'
       })
-      .when('/37', {
+      .when('/36', {
         templateUrl: 'views/usersNormalCommunication.html'
       })
-      .when('/38', {
+      .when('/37', {
         templateUrl: 'views/tools.html'
       })
-      .when('/39', {
+      .when('/38', {
         templateUrl: 'views/yeoman.html'
       })
-      .when('/40', {
+      .when('/39', {
         templateUrl: 'views/grunt.html'
       })
-      .when('/41', {
+      .when('/40', {
         templateUrl: 'views/bower.html'
       })
-      .when('/42', {
+      .when('/41', {
         templateUrl: 'views/karma.html'
       })
-      .when('/43', {
+      .when('/42', {
         templateUrl: 'views/jasmine.html'
       })
-      .when('/44', {
+      .when('/43', {
         templateUrl: 'views/future.html'
+      })
+      .when('/44', {
+        templateUrl: 'views/future2.html'
       })
       .when('/45', {
         templateUrl: 'views/future2.html'
       })
       .when('/46', {
-        templateUrl: 'views/future2.html'
-      })
-      .when('/47', {
         templateUrl: 'views/thankyou.html'
       })
       .otherwise({
